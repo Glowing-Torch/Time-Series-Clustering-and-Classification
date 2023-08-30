@@ -8,7 +8,6 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import recall_score
 
 
-# 输入数据的容器，配合DataLoader，完成mini_bacth训练方法，要包含__init__， __len__和__getitem__三个属性
 class MyDataset(Dataset):
     def __init__(self, train_lines):
         super().__init__()
